@@ -11,7 +11,7 @@ DATABASE_PORT = config.DATABASE_PORT
 DATABASE_NAME = config.DATABASE_NAME
 
 
-engine = create_engine(f"{DATABASE_ENGINE}://{DATABASE_USERNAME}:{DATABASE_PASSWORD}@{DATABASE_HOST}/{DATABASE_NAME}")
+engine = create_engine(f"{DATABASE_ENGINE}://{DATABASE_USERNAME}:{DATABASE_PASSWORD}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE_NAME}")
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
