@@ -10,6 +10,7 @@ from app import config as config_env
 from app.models.breed import Breed
 from app.models.kind import Kind
 from app.models.alert_type import AlertType
+from app.models.user import User
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
